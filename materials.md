@@ -7,10 +7,9 @@ permalink: /materials/
 <!---{% include image.html url="/_images/cover2.jpg" width=175 align="right" %}--->
 
 ## Book
-
 * [Problem Solving with Algorithms and Data Structures using Python, 3rd Edition](https://runestone.academy/ns/books/published/pythonds3/index.html)
 * [Problem Solving with Algorithms and Data Structures using C++](https://runestone.academy/ns/books/published/cppds/index.html)
-* [Python book](https://phonchi.github.io/Computer_Programming/)
+
 
 ## Reference Book
 * [Data Structures & Algorithms in Python](https://www.wiley.com/en-us/Data+Structures+and+Algorithms+in+Python%2C+1st+Edition-p-9781118290279)
@@ -22,14 +21,25 @@ permalink: /materials/
 * [NCTU DS](https://www.youtube.com/watch?v=3503j2L6qNA&list=PLj6E8qlqmkFusQlwukXMUDVdYfd7oPyr3&ab_channel=NYCUOCW)
 * [NTHU DS](https://www.youtube.com/watch?v=vi23i4ZG1cI&list=PLS0SUwlYe8cxbiGgUdK24o756wfbG3Xrw&ab_channel=NTHUOCW)
 * [NSYSU CS - DS](https://par.cse.nsysu.edu.tw/~cbyang/course/ds/ds_index.htm)
+* [NUU](https://www.youtube.com/watch?v=TYUfykyH8iM&list=PLpbuzGqDFzkhHPz11AeGrU7K8AKNqp0fj)
+* [MIT](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+* [Abdul Bari](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
+* [Gerry Jenkins](https://teklern.blogspot.com/p/blog-page.html)
 
 ## Resources
+### Source code
+* [Problem Solving with Algorithms and Data Structures Using Python](https://github.com/psads/psadspy-src)
+* [Problem Solving with Algorithms and Data Structures using C++](https://github.com/pearcej/cppds)
+
 ### Collections
 * [CS Fundamental resources](https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md)
 * [Open Source Society University](https://github.com/ossu/computer-science)
+* [Teach Yourself Computer Science](https://teachyourselfcs.com/#algorithms)
 
-### Simulators
+### Simulators/Visualization
 * [pythontutor](https://pythontutor.com/)
+* [visualalgo](https://visualgo.net/en)
+* [Data Structure Visualizations](https://cmps-people.ok.ubc.ca/ylucet/DS/Algorithms.html)
 
 ### Programming Environment
 * [VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
@@ -37,13 +47,19 @@ permalink: /materials/
 * [Google colab](https://colab.research.google.com/notebooks/intro.ipynb#recent=true)
 
 ### Learning Python/C++
+* [Python Cheatsheet](https://github.com/AbdulMalikDev/PythonCheatSheet?tab=readme-ov-file)
+* [C++ Cheatsheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
 * [Python for everybody](https://runestone.academy/ns/books/published/py4e-int/index.html?mode=browsing)
+* [NSYSU MATH Python book](https://phonchi.github.io/Computer_Programming/)
 * [C++ for Python Programmers I](https://runestone.academy/ns/books/published/cpp4python/index.html)
 * [C++ for Python Programmers II](https://cs.kenyon.edu/wp-content/uploads/2020/11/CForPythonProgrammers.pdf)
 
 ### Practicing
 * [hackerrank](https://www.hackerrank.com/domains/data-structures)
-* [ZeroJudge](https://zerojudge.tw/)
+* [Needcode.io](https://neetcode.io/practice)
+* [CPE](https://cpe.cse.nsysu.edu.tw/)
+* [UVA](https://onlinejudge.org/)
+* [Leetcode](https://leetcode.com/)
 * [More](https://geekflare.com/coding-challenges-to-sharpen-thinking/)
 
 ### Learning Markdown
