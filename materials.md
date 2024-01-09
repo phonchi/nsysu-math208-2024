@@ -38,7 +38,7 @@ permalink: /materials/
 
 ### Simulators/Visualization
 * [pythontutor](https://pythontutor.com/)
-* [visualalgo](https://visualgo.net/en)
+* [visualgo](https://visualgo.net/en)
 * [Data Structure Visualizations](https://cmps-people.ok.ubc.ca/ylucet/DS/Algorithms.html)
 
 ### Programming Environment
