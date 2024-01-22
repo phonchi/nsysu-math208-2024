@@ -51,8 +51,11 @@ permalink: /materials/
 * [C++ Cheatsheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
 * [Python for everybody](https://runestone.academy/ns/books/published/py4e-int/index.html?mode=browsing)
 * [NSYSU MATH Python book](https://phonchi.github.io/Computer_Programming/)
+* [Python Object oriented programming videos - Gossip](https://openhome.cc/zh-tw/python/)
 * [C++ for Python Programmers I](https://runestone.academy/ns/books/published/cpp4python/index.html)
 * [C++ for Python Programmers II](https://cs.kenyon.edu/wp-content/uploads/2020/11/CForPythonProgrammers.pdf)
+* [C++ Object oriented programming videos](https://www.youtube.com/watch?v=IjmyanIQHnQ&list=PLnKth7bLoeC4llLBt1p_Sy0BzlMEHqnwZ)
+* [C++ Object oriented programming videos - Gossip](https://openhome.cc/Gossip/CppGossip/)
 
 ### Practicing
 * [hackerrank](https://www.hackerrank.com/domains/data-structures)
