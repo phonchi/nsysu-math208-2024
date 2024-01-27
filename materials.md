@@ -41,11 +41,16 @@ permalink: /materials/
 * [visualgo](https://visualgo.net/en)
 * [Data Structure Visualizations](https://cmps-people.ok.ubc.ca/ylucet/DS/Algorithms.html)
 
-### Programming Environment
+### Programming Environment (Python)
 * [VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 * [Anaconda](https://www.anaconda.com/products/individual)
 * [Google colab](https://colab.research.google.com/notebooks/intro.ipynb#recent=true)
 
+### Programming Environment (C++)
+* [VSCode](https://blog.darkthread.net/blog/vscode-cpp-cli-setup/)
+* [Dev C++](https://ithelp.ithome.com.tw/articles/10261850)
+
+  
 ### Learning Python/C++
 * [Python Cheatsheet](https://github.com/AbdulMalikDev/PythonCheatSheet?tab=readme-ov-file)
 * [C++ Cheatsheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
@@ -54,7 +59,7 @@ permalink: /materials/
 * [Python Object oriented programming videos - Gossip](https://openhome.cc/zh-tw/python/)
 * [C++ for Python Programmers I](https://runestone.academy/ns/books/published/cpp4python/index.html)
 * [C++ for Python Programmers II](https://cs.kenyon.edu/wp-content/uploads/2020/11/CForPythonProgrammers.pdf)
-* [C++ Object oriented programming videos](https://www.youtube.com/watch?v=IjmyanIQHnQ&list=PLnKth7bLoeC4llLBt1p_Sy0BzlMEHqnwZ)
+* [C++ Object oriented programming videos](https://www.youtube.com/watch?v=dDFZ9v9MOJA&list=PLHDTW9-5SsB_PDhTEn6fRp83UY1q06p-M&index=1)
 * [C++ Object oriented programming videos - Gossip](https://openhome.cc/Gossip/CppGossip/)
 
 ### Practicing
