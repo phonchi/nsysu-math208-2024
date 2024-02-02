@@ -28,8 +28,8 @@ permalink: /materials/
 
 ## Resources
 ### Source code
-* [Problem Solving with Algorithms and Data Structures Using Python](https://github.com/psads/psadspy-src)
-* [Problem Solving with Algorithms and Data Structures using C++](https://github.com/pearcej/cppds)
+* [Problem Solving with Algorithms and Data Structures Using Python](https://github.com/phonchi/pythonds3)
+* [Problem Solving with Algorithms and Data Structures using C++](https://github.com/phonchi/pythonds3/tree/master/cppds)
 
 ### Collections
 * [CS Fundamental resources](https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md)
