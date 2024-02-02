@@ -61,7 +61,7 @@ permalink: /materials/
 * [C++ Object oriented programming - Gossip](https://openhome.cc/Gossip/CppGossip/)
 
 ### Language transistion
-* [Python for C++ Programmers]((https://python.pages.doc.ic.ac.uk/cpp/lessons/cpp/01-intro/index.html)
+* [Python for C++ Programmers](https://python.pages.doc.ic.ac.uk/cpp/lessons/cpp/01-intro/index.html)
 * [C++ for Python Programmers I](https://runestone.academy/ns/books/published/cpp4python/index.html)
 * [C++ for Python Programmers II](https://cs.kenyon.edu/wp-content/uploads/2020/11/CForPythonProgrammers.pdf)
 
