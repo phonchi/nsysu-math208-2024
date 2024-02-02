@@ -50,17 +50,20 @@ permalink: /materials/
 * [VSCode](https://blog.darkthread.net/blog/vscode-cpp-cli-setup/)
 * [Dev C++](https://ithelp.ithome.com.tw/articles/10261850)
 
-  
 ### Learning Python/C++
 * [Python Cheatsheet](https://github.com/AbdulMalikDev/PythonCheatSheet?tab=readme-ov-file)
-* [C++ Cheatsheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
 * [Python for everybody](https://runestone.academy/ns/books/published/py4e-int/index.html?mode=browsing)
 * [NSYSU MATH Python book](https://phonchi.github.io/Computer_Programming/)
-* [Python Object oriented programming videos - Gossip](https://openhome.cc/zh-tw/python/)
+* [Python Object oriented programming - Gossip](https://openhome.cc/zh-tw/python/)
+* [C++ Cheatsheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
+* [NTU C++ Programming](https://ocw.aca.ntu.edu.tw/ntu-ocw/ocw/cou/111S107)
+* [C++ Object oriented programming videos](https://www.youtube.com/watch?v=dDFZ9v9MOJA&list=PLHDTW9-5SsB_PDhTEn6fRp83UY1q06p-M&index=1)
+* [C++ Object oriented programming - Gossip](https://openhome.cc/Gossip/CppGossip/)
+
+### Language transistion
+* [Python for C++ Programmers]((https://python.pages.doc.ic.ac.uk/cpp/lessons/cpp/01-intro/index.html)
 * [C++ for Python Programmers I](https://runestone.academy/ns/books/published/cpp4python/index.html)
 * [C++ for Python Programmers II](https://cs.kenyon.edu/wp-content/uploads/2020/11/CForPythonProgrammers.pdf)
-* [C++ Object oriented programming videos](https://www.youtube.com/watch?v=dDFZ9v9MOJA&list=PLHDTW9-5SsB_PDhTEn6fRp83UY1q06p-M&index=1)
-* [C++ Object oriented programming videos - Gossip](https://openhome.cc/Gossip/CppGossip/)
 
 ### Practicing
 * [hackerrank](https://www.hackerrank.com/domains/data-structures)
