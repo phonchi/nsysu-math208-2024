@@ -7,11 +7,11 @@ thumbnail:
 hide_from_announcments: true
 links: 
     - url: /static_files/presentations/Overview.pdf
-      name: Slides
+      name: Overview_Slides
     - url: /static_files/presentations/01_Introduction.pdf
-      name: Slides
+      name: Ch1_Slides
     - url: /static_files/presentations/01_Introduction.html
-      name: Slides_html
+      name: Ch1_Slides_html
 ---
 **Suggested Readings:**
 - [Notebook](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/01_Introduction.ipynb)
