@@ -15203,9 +15203,9 @@ div.jp-OutputPrompt {
 </li>
 <li><p>Big O Notation</p>
 </li>
-<li><p>An Anagram Detection Example</p>
+<li><p>Example: Anagram Detection</p>
 </li>
-<li><p>Performance of <code>Python</code> Data Structures: <code>Lists/Dictionaries</code></p>
+<li><p>Benchmark of <code>Python</code> Data Structures: <code>Lists/Dictionaries</code></p>
 </li>
 </ol>
 
@@ -15507,11 +15507,11 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Sum is 5000050000 required  0.0040002 seconds
-Sum is 5000050000 required  0.0030003 seconds
-Sum is 5000050000 required  0.0040002 seconds
-Sum is 5000050000 required  0.0029995 seconds
-Sum is 5000050000 required  0.0039990 seconds
+<pre>Sum is 5000050000 required  0.0040004 seconds
+Sum is 5000050000 required  0.0029991 seconds
+Sum is 5000050000 required  0.0040011 seconds
+Sum is 5000050000 required  0.0039995 seconds
+Sum is 5000050000 required  0.0030422 seconds
 </pre>
 </div>
 </div>
@@ -15561,11 +15561,11 @@ Sum is 5000050000 required  0.0039990 seconds
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Sum is 500000500000 required  0.0390027 seconds
-Sum is 500000500000 required  0.0360374 seconds
-Sum is 500000500000 required  0.0359602 seconds
+<pre>Sum is 500000500000 required  0.0360823 seconds
+Sum is 500000500000 required  0.0369999 seconds
+Sum is 500000500000 required  0.0349967 seconds
+Sum is 500000500000 required  0.0359645 seconds
 Sum is 500000500000 required  0.0359993 seconds
-Sum is 500000500000 required  0.0360005 seconds
 </pre>
 </div>
 </div>
@@ -15596,7 +15596,7 @@ Sum is 500000500000 required  0.0360005 seconds
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_of_n_3</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">the_sum</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="n">the_sum</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">//</span> <span class="mi">2</span>
     <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">the_sum</span><span class="p">,</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sum_of_n_3</span><span class="p">(</span><span class="mi">10</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
@@ -15619,7 +15619,7 @@ Sum is 500000500000 required  0.0360005 seconds
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>55.0
+<pre>55
 </pre>
 </div>
 </div>
@@ -15738,7 +15738,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>we would like to have a characterization that is independent of the program or computer being used. This measure would then be useful for judging the algorithm alone and could be used to compare algorithms <strong>across implementations</strong>!</p>
+<p>We would like to have a characterization that is independent of the program or computer being used. This measure would then be useful for judging the algorithm alone and could be used to compare algorithms <strong>across implementations</strong>!</p>
 
 </div>
 </div>
@@ -15797,7 +15797,13 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In the function <code>sum_of_n()</code>, the number of assignment statements is 1 (<code>the_sum = 0</code>) plus the value of $n$ (the number of times we perform <code>the_sum = the_sum + 1</code>). We can denote this by a function, call it $T$, where $T(n)= n+1$.</p>
+<p>In the function <code>sum_of_n()</code>:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_of_n</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">the_sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">the_sum</span> <span class="o">=</span> <span class="n">the_sum</span> <span class="o">+</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">the_sum</span>
+</pre></div>
 
 </div>
 </div>
@@ -15809,7 +15815,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The parameter $n$ is often referred to as the <strong>size of the problem,</strong> and we can read this as <strong>$T(n)$ is the time it takes to solve a problem of size $n$, namely $n+1$ steps.</strong></p>
+<p>The number of assignment statements is 1 (<code>the_sum = 0</code>) plus the value of $n$ (the number of times we perform <code>the_sum = the_sum + 1</code>). We can denote this by a function, call it $T$, where $T(n)= n+1$.</p>
 
 </div>
 </div>
@@ -15821,7 +15827,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We can then say that the sum of the first 100,000 integers is a bigger instance of the summation problem than the sum of the first 1,000. Because of this, it might seem reasonable that the time required to solve the larger case would be greater than for the smaller case.</p>
+<p>The parameter $n$ is often referred to as the <strong>size of the problem,</strong> and we can read this as <strong>$T(n)$ is the time it takes to solve a problem of size $n$, namely $n+1$ steps.</strong></p>
 
 </div>
 </div>
@@ -15833,7 +15839,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Our goal then is to show how the algorithm’s execution time changes with respect to the size of the problem.</p>
+<p>We can then say that the sum of the first 100,000 integers is a bigger instance of the summation problem than the sum of the first 1,000. Our goal then is to show how the algorithm’s execution time (steps) changes with respect to the size of the problem.</p>
 
 </div>
 </div>
@@ -15857,7 +15863,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The <strong>order of th emagnitude of the function</strong> describes the part of $T(n)$ that increases the fastest as the value of $n$ increases. Order of magnitude is often called <u>Big O notation</u> (for order) and written as $O(f(n))$.</p>
+<p>The <strong>order of the magnitude of the function</strong> describes the part of $T(n)$ that increases the fastest as the value of $n$ increases. Order of magnitude is often called <u>Big O notation</u> (for order) and written as $O(f(n))$.</p>
 
 </div>
 </div>
@@ -16143,26 +16149,28 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Exercise:-Write-two-Python-functions-to-find-the-minimum-number-in-a-list.-The-first-function-should-compare-each-number-to-every-other-number-on-the-list.-$O(n%5E2)$.-The-second-function-should-be-linear-$O(n)$.">Exercise: Write two <code>Python</code> functions to find the minimum number in a list. The first function should compare each number to every other number on the list. $O(n^2)$. The second function should be linear $O(n)$.<a class="anchor-link" href="#Exercise:-Write-two-Python-functions-to-find-the-minimum-number-in-a-list.-The-first-function-should-compare-each-number-to-every-other-number-on-the-list.-$O(n%5E2)$.-The-second-function-should-be-linear-$O(n)$.">&#182;</a></h4>
+<h4 id="Exercise:-Analyze-the-time-complexity-of-the-following-code-(You-can-consider-$n$-as-the-power-of-2-for-approximation):">Exercise: Analyze the time complexity of the following code (You can consider $n$ as the power of 2 for approximation):<a class="anchor-link" href="#Exercise:-Analyze-the-time-complexity-of-the-following-code-(You-can-consider-$n$-as-the-power-of-2-for-approximation):">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">i</span> <span class="o">*=</span> <span class="mi">2</span>
+</pre></div>
+
 </div>
 </div>
 </div>
-</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="fragment" >
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Your code here</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Ans:</p>
 
-     </div>
 </div>
 </div>
 </div>
-
 </div></div></section></section><section ><section >
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -16181,7 +16189,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One string is an <strong>anagram</strong> of another if the second is simply a rearrangement of the first. For example, &quot;heart&quot; and &quot;earth&quot; are anagrams. The strings &quot;python&quot; and &quot;typhon&quot; are anagrams as well!</p>
+<p>A good example problem for showing algorithms with different orders of magnitude is the classic anagram detection problem for strings. One string is an <strong>anagram</strong> of another if the second is simply a rearrangement of the first. For example, &quot;heart&quot; and &quot;earth&quot; are anagrams. The strings &quot;python&quot; and &quot;typhon&quot; are anagrams as well!</p>
 
 </div>
 </div>
@@ -16277,7 +16285,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 
     <span class="n">a_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
     <span class="n">pos_1</span> <span class="o">=</span> <span class="mi">0</span>
-
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">pos_1</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">still_ok</span><span class="p">:</span> <span class="c1"># Step2</span>
         <span class="n">pos_2</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
@@ -16286,13 +16294,14 @@ Sum is 5000000050000000 required  0.0000000 seconds
                 <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">pos_2</span> <span class="o">=</span> <span class="n">pos_2</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
         <span class="k">if</span> <span class="n">found</span><span class="p">:</span>
-            <span class="n">a_list</span><span class="p">[</span><span class="n">pos_2</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">del</span> <span class="n">a_list</span><span class="p">[</span><span class="n">pos_2</span><span class="p">]</span> 
         <span class="k">else</span><span class="p">:</span>
             <span class="n">still_ok</span> <span class="o">=</span> <span class="kc">False</span>
         <span class="n">pos_1</span> <span class="o">=</span> <span class="n">pos_1</span> <span class="o">+</span> <span class="mi">1</span>
 
-    <span class="k">return</span> <span class="n">still_ok</span>
+    <span class="k">return</span> <span class="n">still_ok</span><span class="p">,</span> <span class="n">i</span>
 </pre></div>
 
      </div>
@@ -16300,12 +16309,12 @@ Sum is 5000000050000000 required  0.0000000 seconds
 </div>
 </div>
 
-</div></section><section ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></section><section ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">anagram_solution_1</span><span class="p">(</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;pleap&quot;</span><span class="p">))</span>  <span class="c1"># expected: True</span>
@@ -16316,6 +16325,29 @@ Sum is 5000000050000000 required  0.0000000 seconds
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>(True, 10)
+(True, 10)
+(False, 7)
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="fragment" >
@@ -16382,7 +16414,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">anagram_solution_2</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
@@ -16392,16 +16424,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
     <span class="n">a_list_1</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
     <span class="n">a_list_2</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 
-    <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">matches</span> <span class="o">=</span> <span class="kc">True</span>
-
-    <span class="k">while</span> <span class="n">pos</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">matches</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">a_list_1</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">==</span> <span class="n">a_list_2</span><span class="p">[</span><span class="n">pos</span><span class="p">]:</span>
-            <span class="n">pos</span> <span class="o">=</span> <span class="n">pos</span> <span class="o">+</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">matches</span> <span class="o">=</span> <span class="kc">False</span>
-
-    <span class="k">return</span> <span class="n">matches</span>
+    <span class="k">return</span> <span class="n">a_list_1</span> <span class="o">==</span> <span class="n">a_list_2</span><span class="p">,</span> <span class="n">a_list_1</span><span class="p">,</span> <span class="n">a_list_2</span>
 </pre></div>
 
      </div>
@@ -16414,7 +16437,7 @@ Sum is 5000000050000000 required  0.0000000 seconds
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">anagram_solution_2</span><span class="p">(</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;pleap&quot;</span><span class="p">))</span>  <span class="c1"># expected: True</span>
@@ -16439,9 +16462,9 @@ Sum is 5000000050000000 required  0.0000000 seconds
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True
-True
-False
+<pre>(True, [&#39;a&#39;, &#39;e&#39;, &#39;l&#39;, &#39;p&#39;, &#39;p&#39;], [&#39;a&#39;, &#39;e&#39;, &#39;l&#39;, &#39;p&#39;, &#39;p&#39;])
+(True, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;])
+(False, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], [&#39;a&#39;, &#39;c&#39;, &#39;d&#39;, &#39;d&#39;])
 </pre>
 </div>
 </div>
@@ -16566,7 +16589,7 @@ False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">anagram_solution_4</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
@@ -16581,15 +16604,7 @@ False
         <span class="n">pos</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">s2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
         <span class="n">c2</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">c2</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
 
-    <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">still_ok</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># Step 2</span>
-    <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">26</span> <span class="ow">and</span> <span class="n">still_ok</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">c1</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="n">c2</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
-            <span class="n">j</span> <span class="o">=</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">still_ok</span> <span class="o">=</span> <span class="kc">False</span>
-
-    <span class="k">return</span> <span class="n">still_ok</span>
+    <span class="k">return</span> <span class="n">c1</span> <span class="o">==</span> <span class="n">c2</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span>
 </pre></div>
 
      </div>
@@ -16602,7 +16617,7 @@ False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">anagram_solution_4</span><span class="p">(</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;pleap&quot;</span><span class="p">))</span>  <span class="c1"># expected: True</span>
@@ -16627,9 +16642,9 @@ False
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True
-True
-False
+<pre>(True, [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+(True, [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+(False, [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 </pre>
 </div>
 </div>
@@ -16769,7 +16784,7 @@ False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test1</span><span class="p">():</span>
@@ -16851,7 +16866,7 @@ False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">timeit</span> <span class="kn">import</span> <span class="n">Timer</span>
@@ -16883,7 +16898,7 @@ False
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>concatenation:            1.09 milliseconds
+<pre>concatenation:            1.05 milliseconds
 appending:                0.04 milliseconds
 list comprehension:       0.02 milliseconds
 list range:               0.01 milliseconds
@@ -16927,18 +16942,6 @@ list range:               0.01 milliseconds
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>From the experiment above it is clear that the <code>append()</code> operation is much faster than concatenation. It is interesting to note that the list comprehension is twice as fast as a <code>for</code> loop with an <code>append()</code> operation.</p>
-
-</div>
-</div>
-</div>
-</div></div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One final observation is that all of the times that you see above include some overhead for actually calling the test function, but we can assume that the function call overhead is identical in all four cases so we still get a meaningful comparison of the operations. As an exercise you could test the time it takes to call an empty function and subtract that from the numbers above!</p>
 
 </div>
 </div>
@@ -17052,36 +17055,12 @@ list range:               0.01 milliseconds
 </div>
 </div>
 </div>
-</div><div class="fragment" >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>When an item is taken from the front of the <code>list</code>, all the other elements in the <code>list</code> are shifted one position closer to the beginning. This may seem silly to you now, but if you look at Table you will see that this implementation also allows the index operation to be $O(1)$. This is a tradeoff that the Python designers thought was a good one!</p>
-
-</div>
-</div>
-</div>
-</div></div></section><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Let’s do another experiment using the <code>timeit</code> module. Our goal is to be able to verify the performance of the <code>pop()</code> operation on a <code>list</code> of a known size when the program pops from the end of the list, and again when the program pops from the beginning of the list.</p>
-
-</div>
-</div>
-</div>
 </div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we do want to be able to use the list object x in our test</span>
@@ -17090,10 +17069,10 @@ list range:               0.01 milliseconds
 <span class="n">pop_zero</span> <span class="o">=</span> <span class="n">Timer</span><span class="p">(</span><span class="s2">&quot;x.pop(0)&quot;</span><span class="p">,</span> <span class="s2">&quot;from __main__ import x&quot;</span><span class="p">)</span>
 <span class="n">pop_end</span> <span class="o">=</span> <span class="n">Timer</span><span class="p">(</span><span class="s2">&quot;x.pop()&quot;</span><span class="p">,</span> <span class="s2">&quot;from __main__ import x&quot;</span><span class="p">)</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2000000</span><span class="p">))</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2_000_000</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;pop(0): </span><span class="si">{</span><span class="n">pop_zero</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span><span class="si">:</span><span class="s2">10.5f</span><span class="si">}</span><span class="s2"> milliseconds&quot;</span><span class="p">)</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2000000</span><span class="p">))</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2_000_000</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;pop(): </span><span class="si">{</span><span class="n">pop_end</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span><span class="si">:</span><span class="s2">11.5f</span><span class="si">}</span><span class="s2"> milliseconds&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -17114,7 +17093,7 @@ list range:               0.01 milliseconds
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>pop(0):    0.72283 milliseconds
+<pre>pop(0):    0.60367 milliseconds
 pop():     0.00004 milliseconds
 </pre>
 </div>
@@ -17141,7 +17120,7 @@ pop():     0.00004 milliseconds
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pop_zero</span> <span class="o">=</span> <span class="n">Timer</span><span class="p">(</span><span class="s2">&quot;x.pop(0)&quot;</span><span class="p">,</span> <span class="s2">&quot;from __main__ import x&quot;</span><span class="p">)</span>
@@ -17173,16 +17152,16 @@ pop():     0.00004 milliseconds
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>n                  pop(0)          pop()
-1000000           0.20570        0.00004
-2000000           0.77414        0.00004
-3000000           1.56184        0.00004
-4000000           1.85473        0.00004
-5000000           2.43492        0.00004
-6000000           2.95523        0.00004
-7000000           3.55318        0.00004
-8000000           4.09937        0.00004
-9000000           4.67260        0.00004
-10000000          5.17886        0.00004
+1000000           0.19326        0.00004
+2000000           0.65571        0.00004
+3000000           1.14437        0.00004
+4000000           1.63495        0.00004
+5000000           2.26735        0.00004
+6000000           2.86276        0.00004
+7000000           3.35547        0.00004
+8000000           3.90567        0.00004
+9000000           4.50471        0.00004
+10000000          4.91603        0.00004
 </pre>
 </div>
 </div>
@@ -17216,33 +17195,6 @@ pop():     0.00004 milliseconds
 </div>
 </div>
 </div>
-</div></div></section><section >
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Exercise:-Devise-an-experiment-to-verify-that-the-list-index-operator-is-$O(1)$.">Exercise: Devise an experiment to verify that the list index operator is $O(1)$.<a class="anchor-link" href="#Exercise:-Devise-an-experiment-to-verify-that-the-list-index-operator-is-$O(1)$.">&#182;</a></h4>
-</div>
-</div>
-</div>
-</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Your code here</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div></div></section></section><section ><section >
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -17330,7 +17282,7 @@ pop():     0.00004 milliseconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One important side note on dictionary performance is that the efficiencies we provide in the table are for <strong>average performance</strong>. In some rare cases the contains, get item, and set item operations can degenerate into <a href="https://github.com/AbdulMalikDev/PythonCheatSheet?tab=readme-ov-file">$O(n)$
+<p>One important side note on dictionary performance is that the efficiencies we provide in the table are for <strong>amortized worst case performance</strong>. In some rare cases the contains, get item, and set item operations can degenerate into <a href="https://github.com/AbdulMalikDev/PythonCheatSheet?tab=readme-ov-file">$O(n)$
 performance</a>, you can refer to Chapter 8 for more information.</p>
 
 </div>
@@ -17353,14 +17305,14 @@ performance</a>, you can refer to Chapter 8 for more information.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">timeit</span>
 <span class="kn">import</span> <span class="nn">random</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;n&#39;</span><span class="si">:</span><span class="s2">10s</span><span class="si">}{</span><span class="s1">&#39;list&#39;</span><span class="si">:</span><span class="s2">&gt;10s</span><span class="si">}{</span><span class="s1">&#39;dict&#39;</span><span class="si">:</span><span class="s2">&gt;10s</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10_000</span><span class="p">,</span> <span class="mi">1_000_001</span><span class="p">,</span> <span class="mi">100_000</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100_000</span><span class="p">,</span> <span class="mi">1_000_001</span><span class="p">,</span> <span class="mi">100_000</span><span class="p">):</span>
     <span class="n">t</span> <span class="o">=</span> <span class="n">timeit</span><span class="o">.</span><span class="n">Timer</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;random.randrange(</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">) in x&quot;</span><span class="p">,</span>
     <span class="s2">&quot;from __main__ import random, x&quot;</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
@@ -17388,16 +17340,16 @@ performance</a>, you can refer to Chapter 8 for more information.</p>
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>n               list      dict
-10,000         0.040     0.000
-110,000        0.438     0.001
-210,000        0.833     0.001
-310,000        1.242     0.001
-410,000        1.729     0.001
-510,000        2.091     0.001
-610,000        2.596     0.001
-710,000        2.988     0.001
-810,000        3.377     0.001
-910,000        3.856     0.001
+100,000        0.378     0.001
+200,000        0.775     0.001
+300,000        1.127     0.001
+400,000        1.617     0.001
+500,000        1.947     0.001
+600,000        2.431     0.001
+700,000        2.833     0.001
+800,000        3.390     0.001
+900,000        3.644     0.001
+1,000,000      4.186     0.001
 </pre>
 </div>
 </div>
@@ -17431,6 +17383,33 @@ performance</a>, you can refer to Chapter 8 for more information.</p>
 </div>
 </div>
 </div>
+</div></div></section><section >
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Exercise:-Devise-an-experiment-to-verify-that-the-list-index-operator-is-$O(1)$.">Exercise: Devise an experiment to verify that the list index operator is $O(1)$.<a class="anchor-link" href="#Exercise:-Devise-an-experiment-to-verify-that-the-list-index-operator-is-$O(1)$.">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Your code here</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div></div></section></section><section ><section >
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
