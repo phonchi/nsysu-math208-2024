@@ -16,5 +16,6 @@ links:
 - [Exercise](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch2.ipynb)
 - [Exercise_sol](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch2_sol.ipynb)
 - Textbook Chapter 2
+- [[Recorded video]](https://www.youtube.com/playlist?list=PLHNZtBNWQ-85qGjZUEXgowm2tqyAS1yhR)
 
 
