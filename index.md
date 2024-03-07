@@ -8,5 +8,5 @@ Join our [Facebook Group](https://www.facebook.com/groups/938551624371183) to di
 
 Office hours: Mon. 16:00-18:00 and Wed. 16:00-18:00 at 理SC 2002-4
 
-TA hour: Wed. 16:00-17:00 (祐瑄) at 理SC 1011-3 and Tue. 14:00-15:00 (柏仰) at 理SC 2004
+TA hour: Wed. 16:00-17:00 (祐瑄) at 理SC 1011-3 and Thur. 14:00-15:00 (柏仰) at 理SC 2004
 
