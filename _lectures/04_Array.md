@@ -10,9 +10,9 @@ links:
       name: Ch3_Slides
     - url: /static_files/presentations/04_Linear Linked Structure.pdf
       name: Ch4_Slides
-    - url: /static_files/presentations/03_Arrays.ipynb
+    - url: /static_files/presentations/03_Arrays.html
       name: Ch3_Slides_html
-    - url: /static_files/presentations/04_Linear Linked Structure.ipynb
+    - url: /static_files/presentations/04_Linear Linked Structure.html
       name: Ch4_Slides_html
 ---
 **Suggested Readings:**
