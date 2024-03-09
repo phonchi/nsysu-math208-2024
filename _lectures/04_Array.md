@@ -17,7 +17,7 @@ links:
 ---
 **Suggested Readings:**
 - [Notebook_ch3](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/03_Arrays.ipynb)
-- [Notebook_ch4](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/04_Linear Linked Structure.ipynb)
+- [Notebook_ch4](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/04_Linear_Linked_Structure.ipynb)
 - [Exercise](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch3.ipynb)
 - [Exercise_sol](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch3_sol.ipynb)
 - Reference book Chapter 5
