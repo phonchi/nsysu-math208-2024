@@ -1,0 +1,20 @@
+---
+type: lecture
+date: 2024-03-25
+title: Stack, Queue and recursion
+tldr: 
+thumbnail: 
+hide_from_announcments: true
+links: 
+    - url: /static_files/presentations/06_Recursion.pdf
+      name: Ch5_Slides
+    - url: /static_files/presentations/06_Recursion.html
+      name: Ch5_Slides_html
+---
+**Suggested Readings:**
+- [Notebook_ch6](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/06_Recursion.ipynb)
+- [Exercise 6](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch6.ipynb)
+- [Exercise 6_sol](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch6_sol.ipynb)
+- Textbook Chapter 3,4
+
+
