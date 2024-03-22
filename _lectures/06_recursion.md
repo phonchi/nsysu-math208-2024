@@ -7,9 +7,9 @@ thumbnail:
 hide_from_announcments: true
 links: 
     - url: /static_files/presentations/06_Recursion.pdf
-      name: Ch5_Slides
+      name: Ch6_Slides
     - url: /static_files/presentations/06_Recursion.html
-      name: Ch5_Slides_html
+      name: Ch6_Slides_html
 ---
 **Suggested Readings:**
 - [Notebook_ch6](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/06_Recursion.ipynb)
