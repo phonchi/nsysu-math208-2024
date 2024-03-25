@@ -18,5 +18,6 @@ links:
 - [Infix to postfix visualization](https://exconvert.glitch.me/)
 - [Postfix evaluation visualization](https://notation-visualizer.ajayliu.com/stack)
 - Textbook Chapter 3,4
+- [[Recorded video]](https://www.youtube.com/playlist?list=PLHNZtBNWQ-87ZyH-8s5vQzKM_bg2kh1dm)
 
 
