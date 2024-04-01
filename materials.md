@@ -32,6 +32,7 @@ permalink: /materials/
 * [Problem Solving with Algorithms and Data Structures using C++](https://github.com/phonchi/pythonds3/tree/master/cppds)
 
 ### Collections
+* [資工所相關資源](https://eecsmt.com/cs-resource/)
 * [CS Fundamental resources](https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md)
 * [Open Source Society University](https://github.com/ossu/computer-science)
 * [Teach Yourself Computer Science](https://teachyourselfcs.com/#algorithms)
