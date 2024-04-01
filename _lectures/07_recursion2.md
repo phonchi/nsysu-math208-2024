@@ -10,5 +10,6 @@ links:
 ---
 **Suggested Readings:**
 - Textbook Chapter 4
+- [[Recorded video]](https://www.youtube.com/playlist?list=PLHNZtBNWQ-859Zz-RHSsV3WBobaA31K4e)
 
 
