@@ -15,7 +15,7 @@ links:
 - [Notebook_ch7](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/07_Searching and Sorting.ipynb)
 - [Exercise 7](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch7.ipynb)
 - [Exercise 7_sol](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch7_sol.ipynb)
-- [Hash table 1]([https://exconvert.glitch.me/](https://visualgo.net/en/hashtable))
+- [Hash table 1](https://visualgo.net/en/hashtable)
 - [Hash table 2](https://fchart.github.io/DS/DSVisualization/ClosedHash.html)
 - Textbook Chapter 5
 
