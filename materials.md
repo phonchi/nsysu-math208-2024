@@ -41,7 +41,7 @@ permalink: /materials/
 ### Simulators/Visualization
 * [pythontutor](https://pythontutor.com/)
 * [visualgo](https://visualgo.net/en)
-* [Data Structure Visualizations](https://cmps-people.ok.ubc.ca/ylucet/DS/Algorithms.html) [中文版本](https://fchart.github.io/DS/)
+* [Data Structure Visualizations](https://cmps-people.ok.ubc.ca/ylucet/DS/Algorithms.html) [[中文版本](https://fchart.github.io/DS/)]
 
 ### Programming Environment (Python)
 * [VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
