@@ -33,6 +33,7 @@ permalink: /materials/
 
 ### Collections
 * [資工所相關資源](https://eecsmt.com/cs-resource/)
+* [CS3 Data Structures & Algorithms](https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/)
 * [CS Fundamental resources](https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md)
 * [Open Source Society University](https://github.com/ossu/computer-science)
 * [Teach Yourself Computer Science](https://teachyourselfcs.com/#algorithms)
@@ -40,7 +41,7 @@ permalink: /materials/
 ### Simulators/Visualization
 * [pythontutor](https://pythontutor.com/)
 * [visualgo](https://visualgo.net/en)
-* [Data Structure Visualizations](https://cmps-people.ok.ubc.ca/ylucet/DS/Algorithms.html)
+* [Data Structure Visualizations](https://cmps-people.ok.ubc.ca/ylucet/DS/Algorithms.html) [中文版本](https://fchart.github.io/DS/)
 
 ### Programming Environment (Python)
 * [VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
