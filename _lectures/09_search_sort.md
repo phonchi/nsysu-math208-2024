@@ -20,5 +20,6 @@ links:
 - [Hash table 1](https://visualgo.net/en/hashtable)
 - [Hash table 2](https://fchart.github.io/DS/DSVisualization/ClosedHash.html)
 - Textbook Chapter 5
+- [[Recorded video]](https://www.youtube.com/playlist?list=PLHNZtBNWQ-85lDjxi107c7Z9IoIE9m02z)
 
 
