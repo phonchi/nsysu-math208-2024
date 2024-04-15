@@ -10,6 +10,8 @@ links:
       name: Ch7_Slides
     - url: /static_files/presentations/07_Searching and Sorting.html
       name: Ch7_Slides_html
+    - url: /static_files/presentations/Midterm_sol.pdf
+      name: Midterm solution
 ---
 **Suggested Readings:**
 - [Notebook_ch7](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/07_Searching and Sorting.ipynb)
