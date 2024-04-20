@@ -10,7 +10,7 @@ links:
 ---
 **Suggested Readings:**
 - [Sorting 1](https://visualgo.net/en/sorting?slide=1)
-- [Sorting 2](https://www.sortvisualizer.com/)
+- [Sorting 2](https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/#sorting)
 - Textbook Chapter 5
 
 
