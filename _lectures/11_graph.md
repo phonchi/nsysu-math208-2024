@@ -17,5 +17,6 @@ links:
 - [Exercise 8](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch8.ipynb)
 - [Exercise 8_sol](https://github.com/phonchi/nsysu-math208/blob/main/static_files/presentations/Ch8_sol.ipynb)
 - Textbook Chapter 7
+- [[Recorded video]](https://www.youtube.com/playlist?list=PLHNZtBNWQ-85XcJyAfipB80aUDDz4cDxS)
 
 
