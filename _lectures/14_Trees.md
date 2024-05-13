@@ -10,6 +10,8 @@ links:
 
 ---
 **Suggested Readings:**
+- [Expression Tree Generator](https://lnogueir.github.io/expression-tree-gen/)
+- [Expression Tree visualization](https://notation-visualizer.ajayliu.com/tree)
 - Textbook Chapter 6
 
 
