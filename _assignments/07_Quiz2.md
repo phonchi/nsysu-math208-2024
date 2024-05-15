@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2024-05-15T16:00:00+3:30
-title: 'Take home quiz #1'
+title: 'Take home quiz #2'
 attachment: /static_files/assignments/Quiz.pdf
 
 due_event: 
