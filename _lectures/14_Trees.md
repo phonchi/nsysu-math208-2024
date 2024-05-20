@@ -13,5 +13,6 @@ links:
 - [Expression Tree Generator](https://lnogueir.github.io/expression-tree-gen/)
 - [Expression Tree visualization](https://notation-visualizer.ajayliu.com/tree)
 - Textbook Chapter 6
+- [[Recorded video]](https://youtube.com/playlist?list=PLHNZtBNWQ-869XBqZ0RNZkdQ1czbjegez&si=3yiH2fyKofyDjewK)
 
 
