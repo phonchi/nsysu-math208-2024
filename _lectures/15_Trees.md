@@ -11,5 +11,6 @@ links:
 ---
 **Suggested Readings:**
 - Textbook Chapter 6
+- [[Recorded video]](https://youtube.com/playlist?list=PLHNZtBNWQ-86SCzaQIiRX1h84NIaCLbVZ&si=_6ZBPfRsIcUazsoN)
 
 
